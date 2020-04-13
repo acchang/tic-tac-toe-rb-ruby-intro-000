@@ -155,6 +155,7 @@ end
 def play(board)
     while over?(board) == false
     turn(board)
+    draw(board)
   if won?(board) == true
       puts "Congratulations #{winner(board)}!"
     else
@@ -162,6 +163,7 @@ def play(board)
     end
   end
 end
+
     # needs counters, loops
 # Run the tests for the #play method by typing rspec spec/02_play_spec.rb in your terminal.
 # plays the first few turns of the game (FAILED)
