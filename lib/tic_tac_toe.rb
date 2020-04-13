@@ -162,7 +162,7 @@ def play(board)
     move(board, index, player="X")
     display_board(board)
     draw?(board)
-    until over?(board) == true
+    while over?(board) == false
     end
   if won?(board) == true
       puts "Congratulations!"
