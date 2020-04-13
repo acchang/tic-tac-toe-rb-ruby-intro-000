@@ -153,6 +153,7 @@ def winner(board)
 end
 
 def play(board)
+  def draw?(board)
   until over?(board) == true
       turn(board)
     end
