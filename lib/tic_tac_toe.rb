@@ -153,15 +153,7 @@ end
     end
 
 def play(board)
-  puts "Please enter 1-9:"
-  input=gets.strip
-  index = input_to_index(input)
-  if valid_move?(board, index) == false
     turn(board)
-  else
-    move(board, index, player="X")
-    display_board(board)
-    draw?(board)
     while over?(board) == false
     end
   if won?(board) == true
