@@ -153,11 +153,8 @@ end
     end
 
 def play(board)
-    while 
+    while over?(board) == false
     turn(board)
-  if draw?(board) == false
-  end
-end
   if won?(board) == true
       puts "Congratulations #{winner(board)}!"
     else
