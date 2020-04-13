@@ -161,7 +161,7 @@ def play(board)
       puts "Cats Game!"
     end
   end
-
+end
     # needs counters, loops
 # Run the tests for the #play method by typing rspec spec/02_play_spec.rb in your terminal.
 # plays the first few turns of the game (FAILED)
