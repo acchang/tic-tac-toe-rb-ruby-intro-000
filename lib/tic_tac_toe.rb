@@ -156,6 +156,7 @@ def play(board)
   if draw?(board) == false
     turn(board)
   until over?(board) == true
+  end
     end
 
     if won?(board) == true
