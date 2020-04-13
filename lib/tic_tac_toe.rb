@@ -161,9 +161,8 @@ def play(board)
   else
     move(board, index, player="X")
     display_board(board)
-    until over?(board) == true
-    turn(board)
     draw?(board)
+    until over?(board) == true
   if won?(board) == true
       puts "Congratulations!"
   elseif won?(board) == false
