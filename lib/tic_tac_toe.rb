@@ -158,19 +158,20 @@ def play(board)
   until over?(board) == true
   end
 end
-
-    if won?(board) == true
+  if won?(board) == true
       puts "Congratulations #{winner(board)}!"
     else
       puts "Cats Game!"
     end
   end
+end
+
     # needs counters, loops
 # Run the tests for the #play method by typing rspec spec/02_play_spec.rb in your terminal.
-# plays the first few turns of the game (FAILED - 4)
-#  checks if the game is won after every turn (FAILED - 5)
-#  checks if the game is draw after every turn (FAILED - 6)
-#  stops playing if someone has won
+# plays the first few turns of the game (FAILED)
+#  checks if the game is won after every turn
+#  checks if the game is draw after every turn (?)
+#  stops playing if someone has won (?)
 #  congratulates the winner X (FAILED - 7)
 #  congratulates the winner O (FAILED - 8)
 #  stops playing in a draw
