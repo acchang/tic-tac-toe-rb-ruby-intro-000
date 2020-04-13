@@ -55,19 +55,6 @@ def valid_move?(board, index)
       end
     end
 
-# taken from Tic Tac Toe Turn
-    def turn(board)
-      puts "Please enter 1-9:"
-      input=gets.strip
-      index = input_to_index(input)
-      if valid_move?(board, index) == false
-        turn(board)
-      else
-        move(board, index, player="X")
-        display_board(board)
-      end
-    end
-
 def turn_count(board)
     # counts occupied positions
     counter = 0
@@ -152,10 +139,23 @@ def winner(board)
     return nil
 end
 
+# taken from Tic Tac Toe Turn
+    def turn(board)
+      puts "Please enter 1-9:"
+      input=gets.strip
+      index = input_to_index(input)
+      if valid_move?(board, index) == false
+        turn(board)
+      else
+        move(board, index, player="X")
+        display_board(board)
+      end
+    end
+
 def play(board)
-  if draw?(board) == false
+    while 
     turn(board)
-  until over?(board) == true
+  if draw?(board) == false
   end
 end
   if won?(board) == true
