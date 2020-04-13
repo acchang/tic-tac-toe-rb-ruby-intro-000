@@ -153,9 +153,9 @@ def winner(board)
 end
 
 def play(board)
-  def draw?(board)
+  if draw?(board) == false
+    turn(board)
   until over?(board) == true
-      turn(board)
     end
 
     if won?(board) == true
