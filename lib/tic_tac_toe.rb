@@ -163,6 +163,7 @@ def play(board)
     display_board(board)
     draw?(board)
     until over?(board) == true
+    end
   if won?(board) == true
       puts "Congratulations!"
   elsif won?(board) == false
