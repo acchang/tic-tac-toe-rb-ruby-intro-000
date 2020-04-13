@@ -154,6 +154,7 @@ end
 
 def play(board)
     turn(board)
+    draw?(board)
     while over?(board) == false
     end
   if won?(board) == true
