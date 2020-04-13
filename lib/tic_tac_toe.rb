@@ -165,7 +165,7 @@ def play(board)
     until over?(board) == true
   if won?(board) == true
       puts "Congratulations!"
-  elseif won?(board) == false
+  elsif won?(board) == false
       puts "Cats Game!"
     end
   end
