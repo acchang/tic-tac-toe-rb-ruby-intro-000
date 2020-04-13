@@ -161,7 +161,7 @@ def play(board)
   else
     move(board, index, player="X")
     display_board(board)
-    while over?(board) == false
+    until over?(board) == true
     turn(board)
     draw?(board)
   if won?(board) == true
