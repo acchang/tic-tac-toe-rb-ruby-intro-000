@@ -153,16 +153,12 @@ end
     end
 
 def play(board)
-  if won?(board) == true
-      puts "Congratulations!"
-  elsif won?(board) == false
-      puts "Cats Game!"
     turn(board)
     draw?(board)
     while over?(board) == false
 end
 end
-end
+
 
     # needs counters, loops
 # Run the tests for the #play method by typing rspec spec/02_play_spec.rb in your terminal.
